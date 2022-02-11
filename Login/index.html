@@ -155,7 +155,8 @@
        //alert('cdfsjfguehjrgiuh')
        $('.form-btns').click(function() {
            //alert('begin call');
-          
+           window.flutter_inappwebview
+                      .callHandler('handlerSuccessResponse', 1, true, ['bar', 5], {foo: 'baz'}, "javascript call flutter");
        
         });
    });
@@ -168,8 +169,7 @@
                     // from the Flutter side.
                     console.log(JSON.stringify(result));
                     
-                    window.flutter_inappwebview
-                      .callHandler('handlerSuccessResponse', 1, true, ['bar', 5], {foo: 'baz'}, result);
+                   
                 });
             });
            } catch (error) {
