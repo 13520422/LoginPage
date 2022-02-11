@@ -155,24 +155,25 @@
        //alert('cdfsjfguehjrgiuh')
        $('.form-btns').click(function() {
            //alert('begin call');
-           try {
+          
+       
+        });
+   });
+   try {
+            
             window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
-                window.flutter_inappwebview.callHandler('handlerSuccessResponse',"login page call to flutter")
+                window.flutter_inappwebview.callHandler('handlerSuccessResponse')
                   .then(function(result) {
                     // print to the console the data coming
                     // from the Flutter side.
-                    //console.log(result);
-                    alert(result);
-                    // window.flutter_inappwebview
-                    //   .callHandler('handlerFooWithArgs', 1, true, ['bar', 5], {foo: 'baz'}, result);
+                    console.log(JSON.stringify(result));
+                    
+                    window.flutter_inappwebview
+                      .callHandler('handlerSuccessResponse', 1, true, ['bar', 5], {foo: 'baz'}, result);
                 });
             });
            } catch (error) {
             alert(error);
            }
-       
-        });
-   });
-   
     </script>
 </html>
