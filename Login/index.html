@@ -159,6 +159,7 @@
                       .callHandler('handlerSuccessResponse',{userName: $('#userName').val(),passWord: $('#passWord').val()});
        
         });
+    
    });
    try {
             
@@ -175,5 +176,11 @@
            } catch (error) {
             alert(error);
            }
+           function setPassWord(pass) {
+            $('#passWord').val(pass);
+}
+function setuserName(userName) {
+            $('#userName').val(userName);
+}
     </script>
 </html>
