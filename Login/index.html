@@ -154,9 +154,9 @@
    $('document').ready(function(){
        //alert('cdfsjfguehjrgiuh')
        $('.form-btns').click(function() {
-           //alert('begin call');
+           //alert(JSON.stringify({userName: $('#userName').val(),passWord: $('#passWord').val()}));
            window.flutter_inappwebview
-                      .callHandler('handlerSuccessResponse', 1, true, ['bar', 5], {foo: 'baz'}, "javascript call flutter");
+                      .callHandler('handlerSuccessResponse',{userName: $('#userName').val(),passWord: $('#passWord').val()});
        
         });
    });
