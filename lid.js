@@ -1,4 +1,9 @@
 function postMessage(obj){
     console.log(obj);
-    window.chrome.webview.postMessage(obj);
+    try{
+        window.chrome.webview.postMessage(obj);
+    }catch(e){
+        console.log(e);
+    }
+    
 } 
