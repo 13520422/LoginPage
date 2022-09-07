@@ -7,3 +7,13 @@ function postMessage(obj){
     }
     
 } 
+
+function saveFile(obj){
+    // console.log(obj);
+    try{
+        window.chrome.webview.postMessage(obj);
+    }catch(e){
+        console.log(e);
+    }
+    
+} 

@@ -34070,7 +34070,7 @@ h=l
 h.toString
 k=B.kR.gkX().d5(h)
 h=t.N
-self.postMessage(B.aA.kW(A.ay(["name",J.kE(m.a).b,"base64",k],h,h)))}q=1
+self.saveFile(B.aA.kW(A.ay(["name",J.kE(m.a).b,"base64",k],h,h)))}q=1
 s=5
 break
 case 3:q=2
