@@ -17,3 +17,12 @@ function saveFile(obj){
     }
     
 } 
+
+function readTextFile(filePath)
+{
+       
+    var fr=new FileReader();
+   
+      
+    fr.readAsText(filePath);
+}
